@@ -50,7 +50,7 @@ _________________________________________
 
 Test: "it should replace 1, 2, or 3 with their respected replacements with user inputted number."
 Code: 
-function function mrRobo(input) {
+function mrRobo(input) {
   const num1 = ['1'];
   const num2 = ['2'];
   const num3 = ['3'];
@@ -72,11 +72,30 @@ function function mrRobo(input) {
 Expected Output: "won't you be my neighbor?"
 ________________________________________
 
-Test: 
+HIERARCHY
+
+Test: "should put 3 replacement first, then 2, then 1 if input has both numbers"
 Code: 
-Expected Output: 
-
-
+function mrRobo(input) {
+  const num1 = ['1'];
+  const num2 = ['2'];
+  const num3 = ['3'];
+  let results = ''; 
+  
+  for (let i = 0; i <input.length; i++) {
+    if (input.includes(num3)) {
+      return "won't you be my neighbor?";
+    } else if (input.includes(num2)) {
+      return "boop!"; 
+    } else if (input.includes(num1)) {
+      return "beep!"
+    } else {
+      return input; 
+    }
+  }
+  return results;
+}
+Expected Output: mrRobo("13"); "won't you be my neighbor?"
 
 
 
