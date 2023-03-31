@@ -97,6 +97,12 @@ function mrRobo(input) {
 }
 Expected Output: mrRobo("13"); "won't you be my neighbor?"
 
+Test: "it should replace the number '1' in the array with the word 'beep' while keeping all of the other elements in the array"
+Code:
+let userInput = [1,2,3,4];
+userInput.split('1',1,'beep'); --> [2];
+Expected Outcome: userInput; --> [1,'beep',3,4];
+
 
 
 -turn string to number? or keep as string? - can turn string to array easily
