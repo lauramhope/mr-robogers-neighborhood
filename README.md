@@ -28,6 +28,33 @@ function countUp(stopNumber) {
 Input: countUp(4);
 Expected Output: userInput; [0,1,2,3,4];
 
+Test: "it should replace 1, 2, or 3 with their respected replacements with user inputted number."
+Code: function omit123(string) {
+  const number1 = ['1'];
+  const number2 = ['2'];
+  const number3 = ['3'];
+  let results = '';
+
+  for (let i = 0; i <string.length; i++) {
+    const num = string[i];
+    if (number1.includes(num)) {
+      results += "beep";
+    } else if (number2.includes(num)) {
+      results += "boop";
+    } else if (number3.includes(num)) {
+      results += "neighbor";
+    } else {
+      results += num;
+    }
+  }
+  return results;
+}
+Input: omit123("2")
+Expected Output: "boop"
+
+WIP
+
+
 Test: "it should return a number if the input is a string"
 Code: 
 Expected Output: 
