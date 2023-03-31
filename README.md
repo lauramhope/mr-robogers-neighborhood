@@ -28,7 +28,7 @@ function countUp(stopNumber) {
 Input: countUp(4);
 Expected Output: userInput; [0,1,2,3,4];
 
-Test: 
+Test: "it should return a number if the input is a string"
 Code: 
 Expected Output: 
 
