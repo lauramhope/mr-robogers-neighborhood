@@ -81,3 +81,20 @@ function mrRobo(input) {
   return results; 
 }
 ____ mrRobo('14'); = 'beep!'
+
+let newArray = [];
+function countUp(input) {
+  for (let i = 0; i <= input; i++) {
+    newArray.push(i);
+  } if (input.includes('3')) {
+    return "won't you be my neighbor?"; 
+  } else if (input.includes('2')) {
+    return "boop";
+  } else if (input.includes('1')) {
+    return "beep"; 
+  } else {
+    return input;
+  }
+  return newArray; 
+}
+------- countUp('1'); 'beep!'
