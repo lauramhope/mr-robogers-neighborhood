@@ -1,4 +1,4 @@
-function mrRobo(event) {
+function mrRobo(input) {
   event.preventDefault();
   const num1 = '1';
   const num2 = '2';
@@ -7,20 +7,25 @@ function mrRobo(event) {
   let result;
   let newArray = [];
 
-  function countUp(input) {
-    for(let i = 0; i <= input; i++) {
-      newArray.push(i); 
-    }
-    return newArray;
-  }
+  // function countUp(input) {
+  //   for(let i = 0; i <= input; i++) {
+  //     newArray.push(i); 
+  //   }
+  //   return newArray;
+  // }
 
   document.getElementById("answer").innerText = result; 
+
+  for (let i = 0; i <= input; i++) {
+    newArray.push(i);
+  }
+  return newArray;
 }
 
 
-Window.addEventListener("load", function() {
+window.addEventListener("load", function() {
   const form = document.getElementById("survey");
-  form.addEventListener("submit, mrRobo")
+  form.addEventListener("submit", mrRobo);
 }); 
 
 
