@@ -1,8 +1,8 @@
 Describe: mrRobo()
 
 Test: "it should return the word "beep!" if the input is 1"
-Code: function mrRobo(num) {
-  if (num === "1") {
+Code: function mrRobo(input) {
+  if (input === "1") {
     return "beep!"
   } 
 }
@@ -18,9 +18,15 @@ Code: function mrRobo(input) {
 Input: "41"
 Expected Output: "Beep!"
 
-Test: 
-Code: 
-Expected Output: 
+Test: "it should return an array from the users inputted number starting at zero"
+Code: let userInput = [];
+function countUp(stopNumber) {
+  for (let i = 0; i <= stopNumber; i++) {
+    userInput.push(i);
+  }
+}
+Input: countUp(4);
+Expected Output: userInput; [0,1,2,3,4];
 
 Test: 
 Code: 
