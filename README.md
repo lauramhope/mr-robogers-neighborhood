@@ -8,7 +8,7 @@ Code: function mrRobo(input) {
 }
 Input: mrRobo("1");
 Expected Output: "beep!"
-
+_________________________________________
 Test: "it should return the word "beep!" if the input includes 1"
 Code: function mrRobo(input) {
   if (input.includes("1")) {
@@ -17,6 +17,8 @@ Code: function mrRobo(input) {
 }
 Input: "41"
 Expected Output: "Beep!"
+_________________________________________
+Describe: countUp(stopNumber)
 
 Test: "it should return an array from the users inputted number starting at zero"
 Code: let userInput = [];
@@ -25,11 +27,14 @@ function countUp(stopNumber) {
     userInput.push(i);
   }
 }
-Input: countUp(4);
-Expected Output: userInput; [0,1,2,3,4];
+Input: countUp(4); countUp("7")
+Expected Output: userInput; [0,1,2,3,4]; [0,1,2,3,4,5,6,7];
+_________________________________________
+Describe: omit123(string)
 
 Test: "it should replace 1, 2, or 3 with their respected replacements with user inputted number."
-Code: function omit123(string) {
+Code: 
+function omit123(string) {
   const number1 = ['1'];
   const number2 = ['2'];
   const number3 = ['3'];
@@ -51,17 +56,18 @@ Code: function omit123(string) {
 }
 Input: omit123("2")
 Expected Output: "boop"
+________________________________________
 
-WIP
-
-
-Test: "it should return a number if the input is a string"
+Test: "it should replace the entire number "15" with the word "beep""
 Code: 
 Expected Output: 
 
 Test: 
 Code: 
 Expected Output: 
+
+
+
 
 
 -turn string to number? or keep as string? - can turn string to array easily
