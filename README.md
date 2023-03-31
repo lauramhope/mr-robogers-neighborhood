@@ -31,10 +31,21 @@ function countUp(stopNumber) {
 Input: countUp(4); countUp("7")
 Expected Output: [0,1,2,3,4]; [0,1,2,3,4,5,6,7];
 
+________________________________________
+
+Test: "it should change the array to a string after the counting up process."
+Code: let userInput = [];
+function countUp(stopNumber) {
+  for (let i = 0; i <= stopNumber; i++) {
+    userInput.push(i);
+  }
+  return userInput;
+}
+Expected Output: '0,1,2,3,4,5'
 _________________________________________
 Test: "it should replace the entire number "15" with the word "beep""
 Code: function mrRobo(input) {
-  const num1 = ['1'];
+  const num1 = '1';
   let results = ''; 
   
   for (let i = 0; i <input.length; i++) {
@@ -78,9 +89,9 @@ HIERARCHY
 Test: "should put 3 replacement first, then 2, then 1 if input has both numbers"
 Code: 
 function mrRobo(input) {
-  const num1 = ['1'];
-  const num2 = ['2'];
-  const num3 = ['3'];
+  const num1 = '1';
+  const num2 = '2';
+  const num3 = '3';
   let results = ''; 
   
   for (let i = 0; i <input.length; i++) {
