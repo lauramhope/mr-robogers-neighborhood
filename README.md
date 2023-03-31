@@ -26,9 +26,10 @@ function countUp(stopNumber) {
   for (let i = 0; i <= stopNumber; i++) {
     userInput.push(i);
   }
+  return userInput;
 }
 Input: countUp(4); countUp("7")
-Expected Output: userInput; [0,1,2,3,4]; [0,1,2,3,4,5,6,7];
+Expected Output: [0,1,2,3,4]; [0,1,2,3,4,5,6,7];
 
 _________________________________________
 Test: "it should replace the entire number "15" with the word "beep""

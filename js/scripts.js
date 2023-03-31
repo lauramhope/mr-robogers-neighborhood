@@ -16,6 +16,7 @@ function countUp(stopNumber) {
   for (let i = 0; i <= stopNumber; i++) {
     userInput.push(i);
   }
+  return userInput;
 }
 
 function mrRobo(input) {
