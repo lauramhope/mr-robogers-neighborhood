@@ -1,0 +1,13 @@
+body {
+  margin-left: auto;
+  margin-right: auto; 
+  padding-left: 15px; 
+  padding-top: 15px;
+  background-color: lavender;
+  text-align: center; 
+}
+
+.btn {
+  border: solid purple; 
+  background-color:lightyellow;
+}

@@ -1,35 +1,37 @@
 function countUp(input) {
-  let newArray = [];
-  for(let i = 0; i <= input; i++) {
-    newArray.push(i);
+  let inputArray = [];
+  for (let i = 0; i <= input; i++) {
+    inputArray.push(i); 
   }
-  return newArray; 
-}
-
-function mrRobo(event) {
-  event.preventDefault();
-  countUp();
-  const inputNum = document.querySelector("input#number").value;
-  const num1 = '1';
-  const num2 = '2';
-  const num3 = '3';
-  let results = '';
-
-  for(let i = 0; i < inputNum.length; i++) {
+  const mrRoboArray = inputArray.map(function(element) {
+    let inputNum = element.toString();
+    const num1 = '1';
+    const num2 = '2'; 
+    const num3 = '3';
     if (inputNum.includes(num3)) {
-      return "won't you be my neighbor?";
+      return "Won't you be my neighbor?"; 
     } else if (inputNum.includes(num2)) {
-      return "boop!";
+      return "Boop!";
     } else if (inputNum.includes(num1)) {
-      return "beep!";
+      return "Beep!";
     } else {
-      return inputNum; 
+      return element; 
     }
-  }
-  return results; 
+  });
+  return mrRoboArray; 
 }
 
-window.addEventListener("load", function() {
-  const form = document.getElementById("survey");
-  form.addEventListener("submit", mrRobo);
-});
+function displayAnswer(inputArray) {
+  const outputNum = inputArray.join(', ').document.getElementById("answer").innerText;
+}
+
+function submitForm(event){
+  event.preventDefault(); 
+  const inputNumber = parseInt(document.getElementById("number").value);
+  countUp(inputNumber);
+}
+
+window.addEventListener("load", function(event) {
+  const form = document.getElementById("robo-form");
+  form.addEventListener("submit", submitForm);
+}); 

@@ -1,122 +1,89 @@
-Describe: mrRobo()
+# _{Application Name}_
+
+#### By **Laura Hope**_
+
+#### _HTML file demonstrating number generating using loops_
+
+## Technologies Used
+gi
+* _HTML_
+* _CSS_
+* _JavaScript_
+* _Bootstrap_
+
+## Description
+
+_This HTML document showcases beginner-level JavaScript skills using loops, array methods, and branching to produce an text output counting up from 0 to the inputted number in the form, replacing certain numbers with text depending on if conditions are met._
+
+## Setup/Installation Requirements
+
+* _Clone “Mr-Robogers-Neighborhood“ from the repository to your desktop_
+* _Open “Mr-Robogers-Neighborhood“ directory_
+* _Open “index.html“ file in your browser_
+
+## Tests
+
+```Describe: mrRobo()
 
 Test: "it should return the word "beep!" if the input is 1"
-Code: function mrRobo(input) {
-  if (input === "1") {
-    return "beep!"
-  } 
-}
+Code: 
 Input: mrRobo("1");
 Expected Output: "beep!"
-_________________________________________
+
 Test: "it should return the word "beep!" if the input includes 1"
-Code: function mrRobo(input) {
-  if (input.includes("1")) {
-    return "beep!"
-  };
-}
+Code: 
 Input: "41"
 Expected Output: "Beep!"
-_________________________________________
+
 Describe: countUp(stopNumber)
 
 Test: "it should return an array from the users inputted number starting at zero"
-Code: let userInput = [];
-function countUp(stopNumber) {
-  for (let i = 0; i <= stopNumber; i++) {
-    userInput.push(i);
-  }
-  return userInput;
-}
+Code: 
 Input: countUp(4); countUp("7")
 Expected Output: [0,1,2,3,4]; [0,1,2,3,4,5,6,7];
 
-________________________________________
-
 Test: "it should change the array to a string after the counting up process."
-Code: let userInput = [];
-function countUp(stopNumber) {
-  for (let i = 0; i <= stopNumber; i++) {
-    userInput.push(i);
-  }
-  return userInput;
-}
-Expected Output: '0,1,2,3,4,5'
-_________________________________________
-Test: "it should replace the entire number "15" with the word "beep""
-Code: function mrRobo(input) {
-  const num1 = '1';
-  let results = ''; 
-  
-  for (let i = 0; i <input.length; i++) {
-    if (input.includes(num1)) {
-      return "beep";
-    } else {
-      return input; 
-    }
-  }
-  return results;
-}
-Expected Output: "beep"
-_________________________________________
-
-Test: "it should replace 1, 2, or 3 with their respected replacements with user inputted number."
 Code: 
-function mrRobo(input) {
-  const num1 = ['1'];
-  const num2 = ['2'];
-  const num3 = ['3'];
-  let results = ''; 
-  
-  for (let i = 0; i <input.length; i++) {
-    if (input.includes(num1)) {
-      return "beep!";
-    } else if (input.includes(num2)) {
-      return "boop!"; 
-    } else if (input.includes(num3)) {
-      return "won't you be my neighbor?"
-    } else {
-      return input; 
-    }
-  }
-  return results;
-}
-Expected Output: "won't you be my neighbor?"
-________________________________________
+Expected Output: '0,1,2,3,4,5'
 
-HIERARCHY
+Test: "it should replace the entire number "15" with the word "beep""
+Code: 
+Expected Output: "beep"
 
 Test: "should put 3 replacement first, then 2, then 1 if input has both numbers"
 Code: 
-function mrRobo(input) {
-  const num1 = '1';
-  const num2 = '2';
-  const num3 = '3';
-  let results = ''; 
-  
-  for (let i = 0; i <input.length; i++) {
-    if (input.includes(num3)) {
-      return "won't you be my neighbor?";
-    } else if (input.includes(num2)) {
-      return "boop!"; 
-    } else if (input.includes(num1)) {
-      return "beep!"
-    } else {
-      return input; 
-    }
-  }
-  return results;
-}
 Expected Output: mrRobo("13"); "won't you be my neighbor?"
 
 Test: "it should replace the number '1' in the array with the word 'beep' while keeping all of the other elements in the array"
 Code:
-let userInput = [1,2,3,4];
-userInput.split('1',1,'beep'); --> [2];
-Expected Outcome: userInput; --> [1,'beep',3,4];
+Expected Outcome: userInput; --> [1,'beep',3,4];```
 
+## Known Bugs
 
+* _Numbers not appearing on screen as of 3/31/2023_
 
--turn string to number? or keep as string? - can turn string to array easily
--counting up from 0 to inputted number
--turn input into array?
+## License
+
+MIT License
+
+Copyright (c) [2023] [Laura Hope]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+_If you run into any issues or have questions, ideas or concerns, please reach out to me via email: lauramhope.dpt@gmail.com.  Contributions to the code are highly encouraged._
