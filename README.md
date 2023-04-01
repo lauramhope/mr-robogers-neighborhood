@@ -56,8 +56,8 @@ Expected Output: mrRobo("13"); "won't you be my neighbor?"
 
 Test: "it should replace the number '1' in the array with the word 'beep' while keeping all of the other elements in the array"
 Code:
-Expected Outcome: userInput; --> [1,'beep',3,4];```
-
+Expected Outcome: userInput; --> [1,'beep',3,4];
+```
 ## Known Bugs
 
 * _Numbers not appearing on screen as of 3/31/2023_
