@@ -31,7 +31,7 @@ function submitForm(event){
   countUp(inputNumber);
 }
 
-window.addEventListener("load", function(event) {
+window.addEventListener("load", function() {
   const form = document.getElementById("robo-form");
   form.addEventListener("submit", submitForm);
 }); 
