@@ -1,3 +1,5 @@
+// Business Logic
+
 function countUp(input) {
   let inputArray = [];
   for (let i = 0; i <= input; i++) {
@@ -21,8 +23,10 @@ function countUp(input) {
   return mrRoboArray; 
 }
 
-function displayAnswer(inputArray) {
-  const outputNum = inputArray.join(', ').document.getElementById("answer").innerText;
+// User Interface Logic
+
+function displayAnswer(numArray) {
+  const outputNum = numArray.join(', ').document.getElementById("answer").innerText; 
 }
 
 function submitForm(event){
