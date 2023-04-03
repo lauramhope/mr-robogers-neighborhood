@@ -22,12 +22,12 @@ function countUp(input) {
   showAnswer(mrRoboArray); 
 }
 
-// User Interface Logic
 function showAnswer(numArray) {
   const outputNum = numArray.join(', ')
   document.getElementById("answer").innerText = outputNum;
 }
 
+// User Interface Logic
 function submitForm(event){
   event.preventDefault(); 
   const inputNumber = parseInt(document.getElementById("number").value);
