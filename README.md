@@ -60,7 +60,7 @@ Expected Outcome: userInput; --> [1,'beep',3,4];
 ```
 ## Known Bugs
 
-* _Numbers not appearing on screen as of 3/31/2023_
+* _No known bugs as of 4/2/23_
 
 ## License
 

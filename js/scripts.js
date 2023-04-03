@@ -1,5 +1,4 @@
 // Business Logic
-
 function countUp(input) {
   let inputArray = [];
   for (let i = 0; i <= input; i++) {
@@ -20,18 +19,20 @@ function countUp(input) {
       return element; 
     }
   });
-  return mrRoboArray; 
+  showAnswer(mrRoboArray); 
 }
 
 // User Interface Logic
-
-function displayAnswer(numArray) {
-  const outputNum = numArray.join(', ').document.getElementById("answer").innerText; 
+function showAnswer(numArray) {
+  const outputNum = numArray.join(', ')
+  document.getElementById("answer").innerText = outputNum;
 }
 
 function submitForm(event){
   event.preventDefault(); 
   const inputNumber = parseInt(document.getElementById("number").value);
+  const firstName = document.getElementById("firstName").value;
+  document.querySelector("span#spanFirstName").innerText = firstName.concat('!');
   countUp(inputNumber);
 }
 
