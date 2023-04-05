@@ -23,7 +23,8 @@ _This HTML document showcases beginner-level JavaScript skills using loops, arra
 
 ## Tests
 
-```Describe: mrRobo()
+```
+Describe: mrRobo()
 
 Test: "it should return the word "beep!" if the input is 1"
 Code: mrRobo(1);
