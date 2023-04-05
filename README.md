@@ -1,11 +1,11 @@
-# _{Application Name}_
+# _Mr-Robogers-Neighborhood_
 
 #### By **Laura Hope**_
 
 #### _HTML file demonstrating number generating using loops_
 
 ## Technologies Used
-gi
+
 * _HTML_
 * _CSS_
 * _JavaScript_
@@ -26,41 +26,40 @@ _This HTML document showcases beginner-level JavaScript skills using loops, arra
 ```Describe: mrRobo()
 
 Test: "it should return the word "beep!" if the input is 1"
-Code: 
-Input: mrRobo("1");
+Code: mrRobo(1);
 Expected Output: "beep!"
 
 Test: "it should return the word "beep!" if the input includes 1"
-Code: 
-Input: "41"
+Code: mrRobo(41);
 Expected Output: "Beep!"
 
-Describe: countUp(stopNumber)
+Describe: countUp()
 
 Test: "it should return an array from the users inputted number starting at zero"
-Code: 
-Input: countUp(4); countUp("7")
-Expected Output: [0,1,2,3,4]; [0,1,2,3,4,5,6,7];
+Code: countUp(7)
+Expected Output: [0,1,2,3,4,5,6,7];
+
+Describe: mrRoboArray()
 
 Test: "it should change the array to a string after the counting up process."
-Code: 
+Code: mrRoboArray(5);
 Expected Output: '0,1,2,3,4,5'
 
 Test: "it should replace the entire number "15" with the word "beep""
-Code: 
+Code: mrRoboArray(15)
 Expected Output: "beep"
 
 Test: "should put 3 replacement first, then 2, then 1 if input has both numbers"
-Code: 
-Expected Output: mrRobo("13"); "won't you be my neighbor?"
+Code: mrRoboArray(13);
+Expected Output: "won't you be my neighbor?"
 
 Test: "it should replace the number '1' in the array with the word 'beep' while keeping all of the other elements in the array"
-Code:
-Expected Outcome: userInput; --> [1,'beep',3,4];
+Code: mrRoboArray(4)
+Expected Outcome: [0,1,'beep',3,4];
 ```
 ## Known Bugs
 
-* _No known bugs as of 4/2/23_
+* _No known bugs as of 4/5/23_
 
 ## License
 
