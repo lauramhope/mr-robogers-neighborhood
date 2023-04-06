@@ -40,27 +40,26 @@ Test: "it should return an array from the users inputted number starting at zero
 Code: countUp(7)
 Expected Output: [0,1,2,3,4,5,6,7];
 
-Describe: mrRoboArray()
-
 Test: "it should change the array to a string after the counting up process."
-Code: mrRoboArray(5);
+Code: countUp(5);
 Expected Output: '0,1,2,3,4,5'
 
-Test: "it should replace the entire number "15" with the word "beep""
-Code: mrRoboArray(15)
-Expected Output: "beep"
+Test: "it should replace the number '1' in the array with the word 'beep' while keeping all of the other elements in the array"
+Code: countUp(4)
+Expected Outcome: [0,'beep',2,3,4];
+
+Test: "it should replace the entire number "10" with the word "beep""
+Code: countUp(15)
+Expected Output: [0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!]
 
 Test: "should put 3 replacement first, then 2, then 1 if input has both numbers"
-Code: mrRoboArray(13);
-Expected Output: "won't you be my neighbor?"
+Code: countUp(13);
+Expected Output: [0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor?]
 
-Test: "it should replace the number '1' in the array with the word 'beep' while keeping all of the other elements in the array"
-Code: mrRoboArray(4)
-Expected Outcome: [0,1,'beep',3,4];
 ```
 ## Known Bugs
 
-* _No known bugs as of 4/5/23_
+* _No known bugs as of 4/6/23_
 
 ## License
 
